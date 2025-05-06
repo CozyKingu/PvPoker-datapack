@@ -9,7 +9,7 @@ execute unless score global verrouillage matches 1 run kill @e[type=armor_stand,
 execute unless score global verrouillage matches 1 run summon armor_stand ~10 ~ ~ {Tags:["pvp_zone"],NoGravity:1b,Invulnerable:1b}
 
 # Spread for random location
-execute unless score global verrouillage matches 1 run spreadplayers ~ ~ 5 250 false @e[type=armor_stand,tag=pvp_zone,limit=1]
+execute unless score global verrouillage matches 1 run spreadplayers ~ ~ 50 400 false @e[type=armor_stand,tag=pvp_zone,limit=1]
 
 execute unless entity @e[type=armor_stand,tag=pvp_zone,limit=1] run tellraw @a {"text":"La zone PVP n'a pas pu s'initialiser.","color":"red"}
 execute unless entity @e[type=armor_stand,tag=poker,limit=1] run tellraw @a {"text":"La zone de Poker n'est pas initialisé.","color":"red"}
