@@ -15,7 +15,7 @@ gamerule doImmediateRespawn true
 gamerule keepInventory true
 gamemode survival @a[tag=pvpPlayer] 
 clear @a[tag=pvpPlayer]
-give @a[tag=pvpPlayer] minecraft:crossbow{Enchantments:[{id:"piercing",lvl:32767},{id:"unbreaking",lvl:1},{id:"mending",lvl:1}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b}],Charged:1b,Unbreakable:1b} 1
+give @a[tag=pvpPlayer] minecraft:bow{Unbreakable:1b,HideFlags:4,Enchantments:[{id:"minecraft:power",lvl:32767s}]} 1
 give @a[tag=pvpPlayer] minecraft:arrow 64
 
 # récompense kill
