@@ -1,6 +1,7 @@
 scoreboard players set global verrouillage 1
 
 # Initaliser scoreboard
+scoreboard objectives add kills playerKillCount
 scoreboard players set @a[tag=pvpPlayer,scores={kills=1..}] kills 0
 
 execute as @e[type=armor_stand,tag=pvp_zone,limit=1] at @s run worldborder center ~ ~
@@ -17,4 +18,4 @@ give @a[tag=pvpPlayer] minecraft:crossbow{Enchantments:[{id:"piercing",lvl:32767
 give @a[tag=pvpPlayer] minecraft:arrow 64
 
 # récompense kill
-schedule function pvp:endpvp 10s
+schedule function pvp:endpvp 120s
